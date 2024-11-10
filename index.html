@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        
+        html,body{
+            background-color: rgb(255, 183, 0);
+            margin: 0;
+            color: rgb(0, 0, 0);
+            font-family:"Roboto", sans-serif;
+            
+        }
+        header{
+            margin-left: 15px;
+        }
+        .dominique{
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 50px; 
+            margin-top: 70px;
+            position: absolute;
+        }
+        h1{
+            font-family: "Sacramento", cursive;
+            font-weight: 900;
+            font-size: 40px;
+        }
+        .hello{
+            font-family: "Sacramento", cursive;
+            font-weight: 1000;
+            font-style: normal;
+            font-size: 60px;
+            margin-top:10px;
+            position:absolute;
+        }
+        
+            
+        
+        .aboutMe{
+            
+            margin-top:150px;
+            
+            
+          
+            
+        }
+        .aboutMe:hover{
+            
+        }
+        
+        .mySkills{
+
+        }
+           
+        .myProjects{
+            
+            
+        }
+        .contactMe{
+            
+           
+        }
+        #navbar{
+            position:sticky;
+            top:0;
+            left: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            list-style: none;
+            padding: 15px;
+            background-image: linear-gradient(to right,rgb(255, 200, 1), rgb(255, 98, 0),rgb(138, 80, 255));
+            margin-left: 0%;
+            padding-left: 10px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            width: 90%;
+            z-index: 1;
+            
+            
+            
+        }
+        #navbar:hover{
+            position:sticky;
+            top:0;
+            left: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            list-style: none;
+            padding: 15px;
+            background-image: linear-gradient(to right,rgb(255, 200, 1), rgb(255, 98, 0),rgb(138, 80, 255));
+            margin-left: 0%;
+            padding-left: 10px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            width: 90%;
+            z-index: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+        }
+        li{
+            display: inline;
+            padding: 5px;
+            padding: 10px;
+           
+
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            
+            
+
+        }
+
+
+        a:hover {
+            color: black;
+            border: 2px solid black;
+            border-radius: 20px;
+            
+            
+        }
+        .lang{
+            position:relative;
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.968);
+            border-radius: 20px;
+            width: 80%;
+            padding: 15px;
+            font-size: 10px;
+            text-align: center;
+            color: black;
+        }
+        img{
+            
+            width: 30px;
+            padding-right: 5px;
+
+        }
+        section{
+            margin: 15px;
+            width: 80%;
+            background-color:rgb(255, 255, 255);
+            position: relative;
+            padding: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.92);
+            border-radius: 20px;
+            margin-top: 50px;
+            
+        }
+        
+
+        .test{
+            width: 80%;
+            border-radius: 20px;
+            margin-top: 50px;
+            
+        }
+        progress{
+            width: 50%;
+            
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+
+
+        .dropbtn{
+            background-color: blue;
+            color:white;
+            padding: 16px;
+            border: none;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropcontent{
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        .dropcontent a{
+            display:block;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .dropcontent:hover{
+            background-color: aqua;
+        }
+        .dropdown:hover .dropcontent{
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">dropdown</button>
+    <div class="dropcontent">
+        <a href="aboutMe">About Me</a>
+        <a href="contact.html">My Skills</a>
+        <a href="myProjects">My Projects</a>
+        <a href="study.html">My Resume</a>
+        <a href="study.html">Contact Me</a>
+    </div>
+    </div>
+    <ul id="navbar">
+        <li><a href="aboutMe">About Me</a></li>
+        <li><a href="contact.html">My Skills</a></li>
+        <li><a href="myProjects">My Projects</a></li>
+        <li><a href="study.html">My Resume</a></li>
+        <li><a href="study.html">Contact Me</a></li>
+    </ul>
+
+    <header>
+        <h2 class="hello">Hello,</h2>
+        <h1 class="dominique">I'm Dominique</h1>
+    </header>
+   <div class="main">
+    <section class="aboutMe">
+        <h1>About Me</h1>
+            <p>
+                I am a motivated and dedicated individual with a passion for web development
+                and a commitment to achieving exceptional results. With a strong foundation
+                in both front-end and back-end technologies, I possess excellent problemsolving 
+                skills and a positive, collaborative attitude. My ability to multitask
+                enables me to manage various projects effectively while maintaining a
+                professional and approachable demeanor in all business interactions.
+                I thrive on continuous learning and personal growth, actively seeking
+                opportunities to expand my skill set. My goal is to remain adaptable and future-ready
+                in the ever-evolving tech landscape. I am enthusiastic about contributing to
+                innovative projects and am eager to leverage my skills in a dynamic
+                environment.
+
+                <img src="test.png" alt="" class="test">
+            </p>
+    </section>
+    
+    <section class="mySkills">
+        <h1>My Skills</h1>
+            <p>
+                As a motivated and dedicated student studying for a 
+                diploma in Information Technology from Richfield Institute of Technology, 
+                I possess a robust skill set that includes effective communication and critical thinking, 
+                enabling me to analyze complex problems and articulate solutions clearly. 
+                I excel in time management and have excellent multitasking skills, 
+                allowing me to handle various projects efficiently while maintaining 
+                a detail-oriented approach. My computer and information literacy encompasses 
+                both front-end and back-end technologies. I am continually seeking opportunities for 
+                personal growth and skill enhancement, aiming to contribute effectively to innovative projects 
+                in the dynamic tech landscape.
+                
+                
+                <table class="lang">
+                    <tr><td colspan="3"><h2>Programming Languages</h2></td></tr>    
+                    <tr>
+                            <td>
+                                <img src="html.svg"><br>
+                                <label>HTML</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                            <td>
+                                <img src="php.svg"><br>
+                                <label>PHP</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                            <td>
+                                <img src="sqlite.svg"><br>
+                                <label>SQLite</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="css.svg"><br>
+                                <label>CSS</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                            <td>
+                                <img src="python.svg"><br>
+                                <label>Python</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                    
+                                <img src="js.svg"><br>
+                                <label>JavaScript</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                            <td>
+                                <img src="cpp.svg"><br>
+                                <label>C++</label>
+                                <progress value="50" max="100"></progress>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                            
+                            
+                            
+                        </tr>
+                    </table>    
+            </p>
+        </section>
+
+        <section class="myProjects">
+            <h1>My Projects</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                .</p>
+            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                    adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                    cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                    .</p>
+                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                        adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                        cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                        .</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                            adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                            cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                            .</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                                adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                                cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                                .</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                                    adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                                    cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                                    .</p>
+        
+            </section>
+
+            <section class="contactMe">
+                <h1>Contact Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia soluta, autem eos numquam veniam nostrum molestias, at sequi reprehenderit blanditiis fugit 
+                    adipisicing elit. Fuga veritatis quisquam blanditiis dicta nobis libero 
+                    cumque sequi. Sequi officiis minima cum iure eveniet, dignissimos quibusdam placeat animi iusto ipsa dolores. dolorem sapiente velit quo dolores quidem. Asperiores, non
+                    .</p>
+                                                
+            
+                </section>
+   </div>           
+</body>
+</html>
+
+
+192.168.8.182
